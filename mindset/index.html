@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mindset</title>
+  <style>
+    :root {
+      --bg: #fff9f7;
+      --surface: rgba(255,255,255,0.92);
+      --text: #1e1b1a;
+      --muted: rgba(30,27,26,0.68);
+      --coral: #e65a57;
+      --electric: #ff5aa8;
+      --line: rgba(30,27,26,0.08);
+      --shadow: 0 18px 40px rgba(30,27,26,0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Avenir Next", "Segoe UI", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(243,214,207,0.82), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(255,90,168,0.12), transparent 28%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    .card {
+      width: min(860px, 100%);
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      box-shadow: var(--shadow);
+      padding: 34px 30px;
+    }
+    .eyebrow {
+      margin: 0 0 10px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(38px, 7vw, 64px);
+      line-height: 0.95;
+    }
+    .gradient {
+      background: linear-gradient(90deg, var(--coral), var(--electric));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    p {
+      margin: 16px 0 0;
+      max-width: 58ch;
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--muted);
+    }
+    .links {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    a {
+      text-decoration: none;
+      color: var(--text);
+      background: rgba(255,255,255,0.88);
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      padding: 12px 16px;
+      font-weight: 700;
+    }
+    a.primary {
+      color: white;
+      background: linear-gradient(90deg, var(--coral), var(--electric));
+      border-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">Mindset</p>
+    <h1><span class="gradient">Spending insight</span><br>with a calmer lens</h1>
+    <p>Mindset helps you understand what drives your spending, track weekly patterns, and build calmer money habits. This site hosts the public privacy, support, and terms links for the app.</p>
+    <div class="links">
+      <a class="primary" href="/privacy/">Privacy Policy</a>
+      <a href="/mindset/terms/">Terms</a>
+      <a href="/mindset/support/">Support</a>
+    </div>
+  </main>
+</body>
+</html>
